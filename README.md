@@ -54,27 +54,6 @@ npm run dev
 ]
 ```
 
-### Buscar productos por nombre
-
-- **GET** `/api/products/search?nombre=nombreproducto`
-- **Descripcion:** Obtiene los productos cuyo nombre contiene la palabra nombreproducto.
-- **Parámetros:**
-    - `nombre` (query, requerido): texto a buscar en el nombre del producto.
-- **Ejemplos de uso:** `/api/products/search?nombre=auricular`
-- **Respuesta de ejemplo:**
-
-```json
-[
-    {
-        "id": "1",
-        "nombre": "Auricular Genius Hs-02b",
-        "precio": 8900,
-        "descripcion": "El auricular Genius HS-02B 31710037100 es un modelo básico de auriculares con cable diseñado para ser utilizado en computadoras, laptops, tablets y otros dispositivos con conector de audio de 3.5mm.",
-        "stock": 15
-    }
-]
-```
-
 ### Obtener producto por ID
 
 - **GET** `/api/products/:id`
@@ -133,7 +112,7 @@ npm run dev
 - **Descripcion:** Elimina un producto por su ID.
 - **Parámetros:**
     - `id` (path, requerido): ID del producto a eliminar
-- **Ejemplo de uso:** `/api/products/oY3K7Wzkcx2kEIzvPQoq`
+- **Ejemplo de uso:** `/api/products/1`
 - **Respuesta de ejemplo:**
 
 ```json
